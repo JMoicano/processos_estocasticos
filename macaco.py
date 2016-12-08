@@ -53,6 +53,8 @@ def writeOut(fileName, dicionariosEntrada, dicionarioNivel0, k, size):
 		file.write(anterior)
 		if k > 0:
 
+			indice = 1
+
 			for i in xrange(1, k): # Incrementa as palavras ate alcancar o tamanho k
 				
 				atual, anterior = geraAtual(anterior, dicionariosEntrada, dicionarioNivel0)
